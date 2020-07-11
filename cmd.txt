@@ -1,0 +1,14 @@
+Problem: Create a docker image to find square of a number
+Step-1: create a java programe 'Square.java'
+Step-2: create a file 'Dockerfile' and add there the instructions from step-3 to step 7
+Step-3: specify base image->openjdk:7
+Step-4: define a working directory say usr/src/myapp
+Step-5: specify copy command to copy java file into working directory
+step-6: specify compile command 
+Step-7: add default comand to run the compiled file and calculate square of 5
+Step-8: Open command prompt and navigate to location where 'Dockerfile' exist
+Step-9: create image named 'square:latest' using command -> 'docker build -t dhunsys/square:latest .' 
+Step-10: Check image created on local machine as docker images
+Step-11: Check if we can run the image as 'docker run <image-id>
+Step-12: check if we can run the image by our own command -> 'docker run 1e10ee58967b java Square 6' 
+Step-10: push image to docker hub as 'docker push dhunsys/square:latest
